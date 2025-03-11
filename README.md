@@ -50,37 +50,18 @@ pandoc --version
 
 ---
 
-## ✅ Step 4: Create a Batch File to Convert `.md` to `.html`
+## ✅ Step 4: Create the Batch File to Convert `.md` to `.html`
 
-This batch file will:
-
-1. Convert `.md` files to `.html` using Pandoc.
-2. Automatically open the result in **Google Chrome**.
-
-### Steps:
-
-1. Open **Notepad** (or any text editor).
-2. Paste the following content:
-
-```bat
-@echo off
-REM Convert the Markdown file to HTML using Pandoc
-"C:\Program Files\Pandoc\pandoc.exe" "%1" -o "%~dpn1.html"
-
-REM Open the converted HTML file in Chrome
-start chrome "%~dpn1.html"
-```
-
-3. Save the file as:
+1. Copy the provided `open_md.bat` content.  
+2. Paste it into a new file and save it as:
 
 ```
 C:\scripts\open_md.bat
 ```
 
-> ⚠️ **Ensure the file is saved with the `.bat` extension** (not `.txt`). You can choose "All Files" under "Save as type" in Notepad.
-
 ---
 
+This version keeps it simple but clear, ensuring readers know exactly what to do. 🚀
 ## ✅ Step 5: Associate `.md` Files to Open with the Batch Script
 
 This will allow `.md` files to auto-convert and open in Chrome when double-clicked.
