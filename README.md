@@ -19,38 +19,7 @@ C:\scripts
 
 ---
 
-## ✅ Step 2: Add Pandoc to the Windows PATH
-
-This step ensures you can use the `pandoc` command globally.
-
-1. Open the **Start Menu** and search for **Environment Variables**.
-2. Click on **Edit the system environment variables**.
-3. In the **System Properties** window, click **Environment Variables**.
-4. Under **System variables**, select the **`Path`** variable and click **Edit**.
-5. Click **New** and add the following:
-
-```
-C:\scripts
-```
-
-6. Click **OK** to close all windows.
-
----
-
-## ✅ Step 3: Verify Pandoc Installation
-
-1. Open **Command Prompt** (press `Win + R`, type `cmd`, and press Enter).
-2. Type the following and press Enter:
-
-```bash
-pandoc --version
-```
-
-> ✅ If Pandoc is set up correctly, it will display the version information.
-
----
-
-## ✅ Step 4: Create the Batch File
+## ✅ Step 2: Create the Batch File
 
 1. Copy the provided `open_md.bat`.  
 2. Paste it into a new file and save it as:
@@ -62,7 +31,7 @@ C:\scripts\open_md.bat
 ---
 
 This version keeps it simple but clear, ensuring readers know exactly what to do. 🚀
-## ✅ Step 5: Associate `.md` Files to Open with the Batch Script
+## ✅ Step 3: Associate `.md` Files to Open with the Batch Script
 
 This will allow `.md` files to auto-convert and open in Chrome when double-clicked.
 
@@ -81,7 +50,7 @@ C:\scripts\open_md.bat
 
 ---
 
-## ✅ Step 6: Test It Out!
+## ✅ Step 4: Test It Out!
 
  **Double-click** an `.md` file.
 
@@ -92,8 +61,7 @@ C:\scripts\open_md.bat
 ---
 
 ## 🚀 Now, when you double-click a `.md` file:
-1. It will be converted to `.html`.
+1. It will be converted to `.html` (saved in %TEMP% folder).
 2. Automatically open in **Google Chrome**.
-3. Optionally, a PDF version will be created too!
 
 ---
