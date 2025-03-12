@@ -3,7 +3,7 @@
 This guide will show you how to:
 
 1. Install Pandoc and add it to your system's PATH.
-2. Create a batch file to auto-compile Markdown (`.md`) to HTML and open it in Chrome.
+2. Create a batch file to auto-compile Markdown (`.md`) to HTML (and save it to the %TEMP% folder) and open it in Chrome.
 3. Associate `.md` files to open with this batch file on double-click.
 
 ---
@@ -50,7 +50,7 @@ pandoc --version
 
 ---
 
-## ✅ Step 4: Create the Batch File to Convert `.md` to `.html`
+## ✅ Step 4: Create the Batch File
 
 1. Copy the provided `open_md.bat` content.  
 2. Paste it into a new file and save it as:
