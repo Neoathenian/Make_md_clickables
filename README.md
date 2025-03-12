@@ -11,10 +11,10 @@ This guide will show you how to:
 ## ✅ Step 1: Install Pandoc and Verify Location
 
 1. Download Pandoc from [https://pandoc.org/installing.html](https://pandoc.org/installing.html).
-2. If you chose the ZIP download, extract it and place `pandoc.exe` in the following directory:
+2. If you chose the ZIP download, extract it and place `pandoc.exe` in the following directory (create the directory):
 
 ```
-C:\Program Files\Pandoc\pandoc.exe
+C:\scripts
 ```
 
 ---
@@ -30,7 +30,7 @@ This step ensures you can use the `pandoc` command globally.
 5. Click **New** and add the following:
 
 ```
-C:\Program Files\Pandoc\
+C:\scripts
 ```
 
 6. Click **OK** to close all windows.
@@ -52,7 +52,7 @@ pandoc --version
 
 ## ✅ Step 4: Create the Batch File
 
-1. Copy the provided `open_md.bat` content.  
+1. Copy the provided `open_md.bat`.  
 2. Paste it into a new file and save it as:
 
 ```
