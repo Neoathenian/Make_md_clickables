@@ -3,11 +3,14 @@ REM Change to the drive where the input file is located
 %~d1
 cd "%~p1"
 
-REM Convert the Markdown file to HTML using Pandoc and custom CSS
-"C:\Program Files\Pandoc\pandoc.exe" "%~f1" -o "%~dpn1.html" --css="C:\scripts\style.css"
+REM Define the temp directory and the temp HTML file path
+set "TEMP_HTML=%TEMP%\%~n1.html"
 
-REM Convert to PDF (Optional)
+REM Convert the Markdown file to HTML in the temp folder
+"C:\Program Files\Pandoc\pandoc.exe" "%~f1" -o "%TEMP_HTML%" --css="C:\scripts\style.css"
+
+REM Convert to PDF (Optional) - still saving to the same directory
 "C:\Program Files\Pandoc\pandoc.exe" "%~f1" -o "%~dpn1.pdf"
 
 REM Open the converted HTML file in Chrome
-start chrome "%~dpn1.html"
+start chrome "%TEMP_HTML%"
